@@ -3,136 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça a história, a missão e o público atendido pelo Quintal Solidário, ONG de resgate e cuidado de animais.">
-  <title>Sobre | Quintal Solidário</title>
-  <!-- CSS: o grupo do CSS usa este arquivo (na raiz do projeto, como já está no GitHub) -->
+  <title>Sobre nós | Quintal Solidário</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- ===== TOPO: logo + menu (igual nas 4 páginas; só muda o aria-current) ===== -->
+ 
+  <!-- TOPO: nome da ONG e menu (mesmos links do index.html) -->
   <header>
-    <div class="LOGO">
-      <h2>Quintal Solidário</h2>
-    </div>
-    <nav aria-label="Menu principal">
+    <!-- TODO (imagem): logo do Quintal Solidário, com alt="Logo Quintal Solidário" -->
+    <h2>Quintal Solidário</h2>
+    <nav>
       <a href="index.html">Início</a>
       <a href="sobre.html" aria-current="page">Sobre</a>
       <a href="projetos.html">Projetos</a>
       <a href="contato.html">Seja voluntário</a>
     </nav>
   </header>
-
-  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+ 
   <main>
-
-    <!-- Abertura da página -->
-    <section class="destaque-sobre" id="abertura">
-      <h1>Sobre o Quintal Solidário</h1>
-      <p>Somos uma ONG que resgata, cuida e encontra um lar para animais abandonados. Tudo começou em um quintal e hoje depende da generosidade de moradores, adotantes e voluntários.</p>
-      <!-- TODO (imagens): foto/ilustração do quintal ou dos animais. Lembrar do alt descritivo. -->
+ 
+    <!-- 1) ABERTURA -->
+    <section class="hero">
+      <p>Sobre nós</p>
+      <h1>Um quintal com espaço pra todo mundo.</h1>
+      <p>Somos uma ONG de abrigo animal que resgata, cuida e procura uma família para cada cachorro e gato encontrado nas ruas.</p>
+      <!-- TODO (imagem): logo ou foto do abrigo, com alt descritivo -->
     </section>
-
-    <!-- História -->
-    <section class="secao" id="historia">
-      <h2>Nossa história</h2>
-      <p>Criar </p>
-      <p>a Historia</p>
-      <!-- TODO (imagens): imagem opcional da história -->
-    </section>
-
-    <!-- Missão, visão e valores: 3 cartões iguais (bom para o CSS) -->
-    <section class="secao" id="missao">
-      <h2>Missão, visão e valores</h2>
-      <div class="cartoes">
-
-        <article class="cartao">
-          <h3>Missão</h3>
-          <p>Resgatar animais vulneráveis, oferecer cuidado veterinário e acolhimento, e encontrar famílias responsáveis para adotá-los.</p>
-        </article>
-
-        <article class="cartao">
-          <h3>Visão</h3>
-          <p>Uma cidade em que nenhum animal viva abandonado e em que a comunidade participe do cuidado com eles.</p>
-        </article>
-
-        <article class="cartao">
-          <h3>Valores</h3>
-          <ul>
-            <li>Respeito à vida animal</li>
-            <li>Transparência</li>
-            <li>Participação da comunidade</li>
-            <li>Adoção responsável</li>
-          </ul>
-        </article>
-
+ 
+    <!-- 2) QUEM SOMOS: história (texto) + missão, visão e valores (cartão ao lado) -->
+    <section id="quem-somos">
+      <h2>Quem somos</h2>
+      <p>Gente e bicho dividindo o mesmo quintal.</p>
+      <p>O Quintal Solidário nasceu da vontade de dar a cada animal de rua um lugar seguro, com sombra, comida e alguém que o chame pelo nome. Hoje somos uma equipe de 25 pessoas, entre voluntários e profissionais, trabalhando em São Paulo desde 2018.</p>
+      <p>Acreditamos que abrigo não é gaiola. É o quintal onde o bicho descansa, recupera a confiança e espera, com todo o conforto possível, pela família certa.</p>
+      <p>Aqui ninguém é tratado como número. Cada animal tem nome, jeito e história, e é por isso que contamos todas elas.</p>
+ 
+      <div class="mv">
+        <h3>Missão</h3>
+        <p>Resgatar, cuidar e encontrar um lar para animais abandonados.</p>
+        <h3>Visão</h3>
+        <p>Uma cidade onde nenhum bicho precise viver na rua.</p>
+        <h3>Valores</h3>
+        <p>Cuidado, respeito aos animais, transparência e adoção responsável.</p>
       </div>
     </section>
-
-    <!-- Público atendido -->
-    <section class="secao" id="publico">
-      <h2>Quem atendemos</h2>
-
-      <h3>Os animais</h3>
-      <p>Cães e gatos resgatados das ruas, vítimas de maus-tratos ou entregues por famílias que não podem mais cuidar deles. Todos recebem vacina, castração e acompanhamento veterinário antes de serem adotados.</p>
-
-      <h3>As pessoas</h3>
-      <ul>
-        <li><strong>Futuros adotantes:</strong> famílias que querem receber um animal em casa.</li>
-        <li><strong>Padrinhos e madrinhas:</strong> pessoas que ajudam a pagar ração e veterinário de um animal.</li>
-        <li><strong>Voluntários:</strong> quem pode passear com os animais, ajudar nos mutirões de limpeza, fotografar ou oferecer lar temporário.</li>
-      </ul>
+ 
+    <!-- 3) O QUE FAZEMOS: 4 cartões iguais -->
+    <section id="o-que-fazemos">
+      <h2>O que fazemos</h2>
+      <p>Do resgate ao dia em que o bicho vai pra casa.</p>
+ 
+      <article class="card">
+        <!-- TODO (imagem ou ícone) -->
+        <h3>Resgate</h3>
+        <p>Buscamos animais em situação de risco e levamos para um lugar seguro.</p>
+      </article>
+ 
+      <article class="card">
+        <h3>Cuidado veterinário</h3>
+        <p>Consulta, vacina, castração e tratamento até o bicho estar saudável.</p>
+      </article>
+ 
+      <article class="card">
+        <h3>Adoção responsável</h3>
+        <p>Conversamos com cada família para combinar o melhor encontro.</p>
+      </article>
+ 
+      <article class="card">
+        <h3>Lar temporário</h3>
+        <p>Voluntários acolhem os animais em casa até a adoção definitiva.</p>
+      </article>
     </section>
-
-    <!-- Objetivos -->
-    <section class="secao" id="objetivos">
-      <h2>Nossos objetivos</h2>
-      <ul>
-        <li>Resgatar e cuidar de animais em situação de risco.</li>
-        <li>Aumentar o número de adoções responsáveis a cada ano.</li>
-        <li>Orientar a comunidade sobre posse responsável e castração.</li>
-        <li>Manter o abrigo com doações e trabalho voluntário.</li>
-      </ul>
+ 
+    <!-- 4) HISTÓRIAS DO QUINTAL: 4 cartões de animais -->
+    <section id="historias">
+      <h2>Histórias do quintal</h2>
+      <p>Cada bicho chega de um jeito. Estas são algumas das histórias que a gente conta com orgulho.</p>
+ 
+      <article class="card">
+        <!-- TODO (imagem): foto ou ilustração da Mel, com alt -->
+        <h3>Mel</h3>
+        <p>Cachorro · Vacinada · 3 anos · porte médio · fêmea</p>
+        <p>A Mel foi resgatada debaixo de uma marquise e hoje divide o sofá do abrigo com três gatos. Ela adora colo e anda bem com outros cães.</p>
+      </article>
+ 
+      <article class="card">
+        <h3>Tico</h3>
+        <p>Gato · Castrado · 1 ano · porte pequeno · macho</p>
+        <p>O Tico apareceu num estacionamento, assustado e magrinho. Em poucas semanas virou o primeiro a receber visita na porta do abrigo.</p>
+      </article>
+ 
+      <article class="card">
+        <h3>Nina</h3>
+        <p>Cachorro · Idosa · 8 anos · porte médio · fêmea</p>
+        <p>A Nina passou anos numa corrente antes de chegar até nós. Hoje gosta de passeios curtos, sol de manhã e cama macia.</p>
+      </article>
+ 
+      <article class="card">
+        <h3>Bento</h3>
+        <p>Gato · Filhote · 4 meses · porte pequeno · macho</p>
+        <p>O Bento foi encontrado numa caixa de papelão, com os irmãos. É o mais curioso da turma e já aprendeu a abrir a porta do armário.</p>
+      </article>
+ 
+      <p><a href="projetos.html">Conheça os animais que esperam por uma família</a></p>
     </section>
-
-    <!-- Chamada para ação -->
-    <section class="secao" id="chamada">
-      <h2>Quer fazer parte?</h2>
-      <p>Conheça quem está esperando por uma família ou entre em contato para ser voluntário.</p>
-      <!-- Os dois links abaixo podem virar botões pelo CSS (classe "botao") -->
-      <a class="botao" href="projetos.html">Ver os animais</a>
-      <a class="botao" href="contato.html">Quero ser voluntário</a>
-    </section>
-
+ 
   </main>
-
-  <!-- ===== RODAPÉ (igual nas 4 páginas) ===== -->
-  <footer class="CORPO_FOOTER">
-    <div class="footer-titulo"><h3>Quintal Solidário</h3></div>
-    <p class="footer-texto">"Por trás de cada resgate existe a generosidade de quem escolheu doar."</p>
-
-    <div class="info-group">
-      <h2 class="section-title">Localização</h2>
-      <div class="info-line"><strong>Logradouro:</strong> <span>Rua da Esperança, nº 104</span></div>
-      <div class="info-line"><strong>Bairro:</strong> <span>Jardim dos Ipês</span></div>
-      <div class="info-line"><strong>CEP:</strong> <span>12345-678</span></div>
-      <div class="info-line"><strong>Município:</strong> <span>São Paulo</span></div>
-      <div class="info-line"><strong>Estado:</strong> <span>SP</span></div>
-    </div>
-
-    <div class="info-group">
-      <h2 class="section-title">Contato</h2>
-      <div class="info-line"><strong>Telefone:</strong> <span>(11) 2015-5871</span></div>
-      <div class="links-group">
-        <a href="https://www.google.com/maps" target="_blank" rel="noopener">Localizar no Google Maps</a>
-      </div>
-    </div>
-
-    <!-- Aviso ético (critério A1 da rubrica) -->
-    <p class="aviso-academico"><strong>Projeto acadêmico.</strong> O Quintal Solidário é uma ONG fictícia, criada para a disciplina de Front-end. Endereço, telefone e dados são fictícios.</p>
+ 
+  <!-- RODAPÉ -->
+  <footer>
+    <h3>Quintal Solidário</h3>
+    <p>Rua da Esperança, nº 104 - Jardim dos Ipês - São Paulo/SP - CEP 12345-678</p>
+    <p>Telefone: (11) 2015-5871</p>
+    <p><strong>Projeto acadêmico.</strong> ONG fictícia, criada para a disciplina de Front-end. Nomes, animais e números são fictícios.</p>
   </footer>
-
-  <!-- JS: fica no final do body, depois de todo o conteúdo -->
+ 
   <script src="script.js"></script>
 </body>
 </html>
