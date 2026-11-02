@@ -1,4 +1,5 @@
 // Aqui ficará nosso JavaScript
+// referente as caixinhas dos animais
 const botoes = document.querySelectorAll(".nome-animal");
 
 botoes.forEach(function(botao) {
