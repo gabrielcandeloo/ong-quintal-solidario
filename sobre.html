@@ -11,12 +11,15 @@
   <!-- TOPO: nome da ONG e menu (mesmos links do index.html) -->
   <header>
     <!-- TODO (imagem): logo do Quintal Solidário, com alt="Logo Quintal Solidário" -->
-    <h2>Quintal Solidário</h2>
+    <div class="LOGO">
+        <img src="Logo-ONG.png" alt="Logo-Quintal-Solidario" class="Img-Logo">
+        <h2>Quintal Solidário </h2>
+    </div>
     <nav>
       <a href="index.html">Início</a>
       <a href="sobre.html" aria-current="page">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="contato.html">Seja voluntário</a>
+      <a href="projetos.html">Conheça nossos Animais</a>
+      <a href="contato.html">Seja Voluntário</a>
     </nav>
   </header>
  
@@ -138,15 +141,43 @@
        
     </section>
  
+ 
   </main>
  
   <!-- RODAPÉ -->
-  <footer>
-    <h3>Quintal Solidário</h3>
-    <p>Rua da Esperança, nº 104 - Jardim dos Ipês - São Paulo/SP - CEP 12345-678</p>
-    <p>Telefone: (11) 2015-5871</p>
-    <p><strong>Projeto acadêmico.</strong> ONG fictícia, criada para a disciplina de Front-end. Nomes, animais e números são fictícios.</p>
-  </footer>
+  <footer class="CORPO_FOOTER">
+      <div class="footer-titulo"><h3>Quintal solidario</h3> </div>
+        <p class="footer-texto">
+            "Por trás de cada resgate existe a generosidade de quem escolheu doar."
+        </p>
+              <div class="info-group">
+                <h2 class="section-title">Localização</h2>
+                    <div class="info-line">
+                        <strong>Logradouro:</strong> <span>Rua da Esperança, nº 104</span>
+                    </div>
+                    <div class="info-line">
+                        <strong>Bairro:</strong> <span>Bairro Jardim dos Ipês</span>
+                    </div>
+                    <div class="info-line">
+                        <strong>CEP:</strong> <span>12345-678</span>
+                    </div>
+                    <div class="info-line">
+                        <strong>Município:</strong> <span>São Paulo</span>
+                    </div>
+                    <div class="info-line">
+                        <strong>Estado:</strong><span>SP</span>
+                    </div>
+                </div>
+ 
+      <div class="info-group2">
+        <h2 class="section-title">Contato</h2>
+        <div class="info-line"><strong>Telefone:</strong> <span>(11) 2015-5871</span></div>
+       
+        <div class="links-group" 
+          <a href="https://goo.gl" target="_blank">Localizar no Google Maps</a>
+        </div>
+      </div>
+    </footer>
  
   <script src="script.js"></script>
 </body>
