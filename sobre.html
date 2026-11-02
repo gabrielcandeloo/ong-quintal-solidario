@@ -48,64 +48,94 @@
       </div>
     </section>
  
-    <!-- 3) O QUE FAZEMOS: 4 cartões iguais -->
-    <section id="o-que-fazemos">
-      <h2>O que fazemos</h2>
-      <p>Do resgate ao dia em que o bicho vai pra casa.</p>
- 
-      <article class="card">
-        <!-- TODO (imagem ou ícone) -->
-        <h3>Resgate</h3>
-        <p>Buscamos animais em situação de risco e levamos para um lugar seguro.</p>
-      </article>
- 
-      <article class="card">
-        <h3>Cuidado veterinário</h3>
-        <p>Consulta, vacina, castração e tratamento até o bicho estar saudável.</p>
-      </article>
- 
-      <article class="card">
-        <h3>Adoção responsável</h3>
-        <p>Conversamos com cada família para combinar o melhor encontro.</p>
-      </article>
- 
-      <article class="card">
-        <h3>Lar temporário</h3>
-        <p>Voluntários acolhem os animais em casa até a adoção definitiva.</p>
-      </article>
-    </section>
- 
-    <!-- 4) HISTÓRIAS DO QUINTAL: 4 cartões de animais -->
+     <!-- 4) HISTÓRIAS DO QUINTAL: 4 cartões de animais -->
     <section id="historias">
       <h2>Histórias do quintal</h2>
       <p>Cada bicho chega de um jeito. Estas são algumas das histórias que a gente conta com orgulho.</p>
- 
-      <article class="card">
-        <!-- TODO (imagem): foto ou ilustração da Mel, com alt -->
+ <p><a href="projetos.html">Conheça os animais que esperam por uma família</a></p>
+   <div class="cards-container">
+    
+<div class="card">
+
+    <button class="nome-animal"
+            aria-expanded="false"
+            aria-controls="info-mel">
+
+        <img src="dog-mel.jpg" alt="Mel, uma cachorra">
+
         <h3>Mel</h3>
-        <p>Cachorro · Vacinada · 3 anos · porte médio · fêmea</p>
-        <p>A Mel foi resgatada debaixo de uma marquise e hoje divide o sofá do abrigo com três gatos. Ela adora colo e anda bem com outros cães.</p>
-      </article>
+
+        
+
+    </button>
+
+    <div id="info-mel" class="info-animal" hidden>
+
+        <p>Cachorro · Vacinada · 3 anos · Porte médio · Fêmea</p>
+
+        <p>
+            A Mel foi resgatada debaixo de uma marquise
+            e hoje divide o sofá do abrigo com três gatos.
+            Ela adora colo e anda bem com outros cães.
+        </p>
+
+    </div>
+
+</div>
+
  
-      <article class="card">
-        <h3>Tico</h3>
-        <p>Gato · Castrado · 1 ano · porte pequeno · macho</p>
-        <p>O Tico apareceu num estacionamento, assustado e magrinho. Em poucas semanas virou o primeiro a receber visita na porta do abrigo.</p>
-      </article>
+      <div class="card">
+
+        <button class="nome-animal" aling="center"
+          aria-expanded="false"
+          aria-controls="info-bob">
+
+            <img src="dog-bob.jpg" alt="Bob, um cachorro">
+
+          <h3>Bob</h3>
+
+
+
+        </button>
+        <div id="info-bob" class="info-animal" hidden>
+          <p>Cachorro · Vacinado · 2 anos · porte médio · macho</p>
+          <p>O Bob foi resgatado em uma rua do centro e veio para o abrigo com muita energia. Adora brincar e fazer carinho.</p>
+        </div>
+      </div>
  
-      <article class="card">
+      <div class="card">
+
+        <button class="nome-animal"
+          aria-expanded="false"
+          aria-controls="info-nina">
+
+            <img src="dog-nina.jpg" alt="Nina, uma cachorra">
+
         <h3>Nina</h3>
+
+        </button>
+        <div id="info-nina" class="info-animal" hidden>
         <p>Cachorro · Idosa · 8 anos · porte médio · fêmea</p>
         <p>A Nina passou anos numa corrente antes de chegar até nós. Hoje gosta de passeios curtos, sol de manhã e cama macia.</p>
-      </article>
- 
-      <article class="card">
-        <h3>Bento</h3>
-        <p>Gato · Filhote · 4 meses · porte pequeno · macho</p>
-        <p>O Bento foi encontrado numa caixa de papelão, com os irmãos. É o mais curioso da turma e já aprendeu a abrir a porta do armário.</p>
-      </article>
- 
-      <p><a href="projetos.html">Conheça os animais que esperam por uma família</a></p>
+      </div>
+    </div>
+
+      <div class="card">
+        <button class="nome-animal"
+          aria-expanded="false"
+          aria-controls="info-bento">
+
+          <img src="cat-bento.jpg" alt="Bento, um gato">
+          <h3>Bento</h3>
+        </button>
+        <div id="info-bento" class="info-animal" hidden>
+          <p>Gato · Filhote · 4 meses · porte pequeno · macho</p>
+          <p>O Bento foi encontrado numa caixa de papelão, com os irmãos. É o mais curioso da turma e já aprendeu a abrir a porta do armário.</p>
+        </div>
+      </div><br>
+      <br>
+    
+       
     </section>
  
   </main>
