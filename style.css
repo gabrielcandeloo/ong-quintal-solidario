@@ -1,5 +1,82 @@
 CSS Inicial
+
+/* Fundo da Página*/
+body {
+    background-color: #FAF6EE;
+}
+/* Cor da tipografia*/
+.LOGO{
+    color: #1F2A44;
+}
+/* Personalição do Rodapé*/
+.CORPO_FOOTER{
+    color: white;
+    background-color: #1F2A44;
+}
+
 /*css das caixinhas de cada animal*/
+/* Caixa principal */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.card {
+    width: 220px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Botão que contém imagem e nome */
+.nome-animal {
+    width: 100%;
+    border: none;
+    background-color: #8DB36B;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+}
+
+/* Foto do animal */
+.nome-animal img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Nome */
+.nome-animal h3 {
+    padding: 20px;
+    color: #1F2A44;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Sinal de abrir e fechar */
+.sinal {
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    font-size: 22px;
+    color: #B8472F;
+}
+
+/* Informações */
+.info-animal {
+    padding: 15px;
+    color: #5B6478;
+    line-height: 1.5;
+}
+
+/* Esconde as informações */
+.info-animal[hidden] {
+    display: none;
+}
 
 /* Caixa principal */
 .cards-container {
