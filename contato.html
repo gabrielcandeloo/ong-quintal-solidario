@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quero ser doador | Quintal Solidário</title>
+    <script src="script.js" defer></script> <!--Caminho do Java e análise HTML pré execução-->
      <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <header>
     <div class="LOGO">
-         <img src="Logo-ONG.png" alt="Logo-Quintal-Solidario" class="Img-Logo">
+         <img src="docs/Logo-ONG.png" alt="Logo-Quintal-Solidario" class="Img-Logo">
         <h2>Quintal Solidário</h2>
     </div>
     <nav>
@@ -21,23 +22,22 @@
 </header>
 <body>
     <!--titulo-->
-    <h3 id="titulo">Incrição</h3>
+    <h3 id="titulo">Inscrição</h3>
     <div class="explicacao">
         <h1>Conta pra gente como você quer ajudar.</h1>
         
     </div>
     <!--Estrutura do fomulario-->
-    <div class="formulario">
-        <form>
+        <form id="formulario" class="formulario" novalidate>
             <!--texto escrito pelo usuario-->
             <label for="name">Nome:</label>
             <input type="text" id="nome" name="name" /> <br>
 
             <label for="surname">Sobrenome:</label>
-            <input type="text" id="Sobrenome" name="surname" /><br>
+            <input type="text" id="sobrenome" name="surname" /><br>
 
             <label for="email">Endereço de Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required placeholder="voce@exemplo.com">
             <br>
             <!-- condições para colocar numero de telefone no formato correto-->
             <label type="tel">Digite telefone de contato:</label>
@@ -61,20 +61,22 @@
             <input type="checkbox" name="semana[]" value="Quarta-feira"> Quarta-feira<br>
             <input type="checkbox" name="semana[]" value="Quinta-feira"> Quinta-feira<br>
             <input type="checkbox" name="semana[]" value="Sexta-feira"> Sexta-feira<br>
-            <input type="checkbox" name="semana[]" value="Sábado">Sabado <br>
+            <input type="checkbox" name="semana[]" value="Sábado"> Sábado<br>
         </div>
 
 <!--envio de comentario do voluntariado-->
 
         <div class="comment-section">
-            <label for="comment1">Caso tenha alguma duvida ou sugestão nos envie seu comentario por aqui:</label><br>
+            <label for="comment1">Caso tenha alguma duvida ou sugestão nos envie seu comentário por aqui:</label><br>
             <textarea id="comment1" placeholder="Olá..."></textarea>
         </div>
 
-            </form>
-
-            <button>Enviar interesse</button>
-    </div>
+        <button class="botao-envio" type="submit">Enviar interesse</button>
+        <p id="resultado-form" class="resultado" role="status" aria-live="polite"></p>
+        <p class="aviso">Aviso: o envio é simulado. Nenhum e-mail será enviado e nenhum dado será armazenado.</p>
+    </form>
+    
+<!-- ---------------------------------------------- -->
 
 </body>
 <footer class="CORPO_FOOTER">
@@ -105,7 +107,7 @@
         <h2 class="section-title">Contato</h2>
         <div class="info-line"><strong>Telefone:</strong> <span>(11) 2015-5871</span></div>
        
-        <div class="links-group" 
+        <div class="links-group">
           <a href="https://goo.gl" target="_blank">Localizar no Google Maps</a>
         </div>
       </div>
