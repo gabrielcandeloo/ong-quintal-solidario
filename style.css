@@ -1,16 +1,135 @@
+/* Reseta as margens e preenchimentos globais para colar nas bordas */
+/* FONT-FAMILY -> definição da fonte dos textos*/
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    
+}
 /* Fundo da Página*/
 body {
     background-color: #FAF6EE;
 }
-/* Cor da tipografia*/
-.LOGO{
-    color: #1F2A44;
+
+
+/* ----------------------------TOPO PAGINAS------------------------------   */
+.cabecalho{
+    display: flex;
+    align-items: center;            /* Alinha tudo verticalmente ao centro */
+    padding: 0px 120px;
+    background-color: #FAF6EE;      /* Fundo bege claro */
 }
-/* Personalição do Rodapé*/
-.CORPO_FOOTER{
+
+.img-LOGO{
+    height: 80px;
+}
+
+/* Cor da tipografia*/
+.texto-LOGO h2{
+    color: #1F2A44;
+
+}
+.texto-LOGO h6{
+    color: #B8472F;
+}
+
+
+.navegacao{
+    display: flex;
+    padding: 0 200px;
+    align-items: center;
+    gap: 30px; 
+}
+.navegacao a{
+    color: #1F2A44;            /* Cor do texto do link (azul escuro) */
+    text-decoration: none;     /* Remove o sublinhado padrão */
+}
+.navegacao a:hover{
+    color: #B8472F;
+    text-decoration: underline; /* Sublinha apenas ao passar o mouse (opcional) */
+}
+/* -------------------------------------------------------------------   */
+
+
+/* ------------------------------RODAPÉ----------------------------------   */
+.Rodape{
     color: white;
     background-color: #1F2A44;
+    padding: 30px 20px 10px; /* Topo, Direita, Baixo, Esquerda */
+    width: 100%;
 }
+.Rodape-conteudo{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;  
+
+}
+.Slogan{
+    max-width: 150px;
+}
+
+.footer-img{
+    height: 130px;
+}
+
+.Slogan h3{
+    color: #8DB36B;
+}
+
+.Loc h4{
+    color: #8DB36B;
+    padding-top: 30px;
+}
+
+.Loc {
+    max-width: 300px;
+    font-size: 15px;
+}
+
+.contato h4{
+    color: #8DB36B;
+    padding-top: 30px;
+}
+.contato {
+     max-width: 200px;
+     font-size: 15px;
+}
+
+.rodape-copyright{
+    max-width: 1200px;
+    border-top: 1px solid #5B6478; /* Linha fina e discreta */
+    padding-top: 20px;
+    text-align:center;
+}
+.rodape-copyright p {
+    color: #5B6478; /* Tom cinza claro discreto */
+    font-size: 13px;
+}
+/* -------------------------------------------------------------------   */
+
+
+/* -------------------------------------------------------------------   */
+.introducao{
+    border: #1F2A44, solid;
+    margin: 0;
+    background-color: #1F2A44;
+    color: white;
+    text-align: center;
+    text-justify: distribute;
+}
+
+.logo-introducao{
+    height: 300px;
+    width: auto;
+}
+/* -------------------------------------------------------------------   */
+
+
+
+
+
 
 /*css das caixinhas de cada animal*/
 /* Caixa principal */
