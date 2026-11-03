@@ -1,12 +1,128 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos Quintal Solidario</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossos Animais | Quintal Solidário</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <!-- TOPO: nome da ONG e menu (mesmos links das outras páginas) -->
+  <header>
+    <!-- TODO (imagem): logo do Quintal Solidário, com alt="Logo Quintal Solidário" -->
+    <h2>Quintal Solidário</h2>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="projetos.html" aria-current="page">Conheça nossos Animais</a>
+      <a href="contato.html">Seja voluntário</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 1) ABERTURA -->
+    <section class="hero">
+      <p>Adote e ajude</p>
+      <h1>Nossos projetos.</h1>
+      <p>Cada animal tem nome, jeito e história. Conheça quem está esperando uma família e veja como você pode ajudar o quintal.</p>
+      <!-- TODO (imagem): logo ou foto do abrigo, com alt descritivo -->
+    </section>
+
+    <!-- 2) AS 3 INICIATIVAS (o PDF exige no mínimo 3, com nome, descrição, imagem e como a comunidade ajuda) -->
+    <section id="iniciativas">
+      <h2>Três jeitos de ajudar o quintal</h2>
+      <p>Escolha o que combina com a sua rotina.</p>
+
+      <article class="card">
+        <!-- TODO (imagem ou ícone): adoção, com alt -->
+        <h3>Adotar</h3>
+        <p>Conheça quem está esperando e agende uma visita sem compromisso.</p>
+        <p><strong>Como a comunidade pode ajudar:</strong> abrindo a casa para um novo companheiro e passando a ideia adiante.</p>
+        <a href="contato.html">Quero adotar</a>
+      </article>
+
+      <article class="card">
+        <!-- TODO (imagem ou ícone): apadrinhamento, com alt -->
+        <h3>Apadrinhar</h3>
+        <p>Não pode adotar agora? Ajude a pagar a ração e o veterinário de um bichinho.</p>
+        <p><strong>Como a comunidade pode ajudar:</strong> escolhendo um afilhado e acompanhando o cuidado dele de perto.</p>
+        <a href="contato.html">Escolher um afilhado</a>
+      </article>
+
+      <article class="card">
+        <!-- TODO (imagem ou ícone): voluntariado, com alt -->
+        <h3>Ser voluntário</h3>
+        <p>Passeios, mutirões de limpeza, fotos e lar temporário: tem lugar para você.</p>
+        <p><strong>Como a comunidade pode ajudar:</strong> doando algumas horas do seu tempo, do jeito que você puder.</p>
+        <a href="contato.html">Quero ajudar</a>
+      </article>
+    </section>
+
+    <!-- 3) NOSSOS ANIMAIS -->
+    <section id="animais">
+      <h2>Conheça quem está no quintal</h2>
+      <p>Cada bicho chega de um jeito. Veja quem espera por uma família.</p>
+
+      <!-- Filtros: os botões abaixo só funcionam se o grupo do JavaScript fizer o filtro.
+           Os atributos data-filtro e data-tipo já estão prontos para isso.
+           Se o grupo não for usar, apague este bloco inteiro. -->
+      <div id="filtros">
+        <button type="button" data-filtro="todos">Todos</button>
+        <button type="button" data-filtro="cachorro">Cachorros</button>
+        <button type="button" data-filtro="gato">Gatos</button>
+        <button type="button" data-filtro="filhote">Filhotes</button>
+        <button type="button" data-filtro="idoso">Idosos</button>
+      </div>
+
+      <div id="lista-animais">
+
+        <article class="card" data-tipo="cachorro">
+          <!-- TODO (imagem): foto da Mel, com alt="Foto da Mel" -->
+          <h3>Mel</h3>
+          <p>Cachorro · Vacinada · 3 anos · porte médio · fêmea</p>
+          <p>Foi resgatada debaixo de uma marquise e hoje divide o sofá do abrigo com três gatos. Adora colo e anda bem com outros cães.</p>
+          <a href="contato.html" aria-label="Adotar a Mel">Adote</a>
+        </article>
+
+        <article class="card" data-tipo="gato">
+          <!-- TODO (imagem): foto do Tico, com alt="Foto do Tico" -->
+          <h3>Tico</h3>
+          <p>Gato · Castrado · 1 ano · porte pequeno · macho</p>
+          <p>Chegou assustado e magrinho, e em poucas semanas virou o primeiro a receber as visitas na porta. Gosta de brincar e de janela.</p>
+          <a href="contato.html" aria-label="Adotar o Tico">Adote</a>
+        </article>
+
+        <article class="card" data-tipo="cachorro idoso">
+          <!-- TODO (imagem): foto da Nina, com alt="Foto da Nina" -->
+          <h3>Nina</h3>
+          <p>Cachorro · Idosa · 8 anos · porte médio · fêmea</p>
+          <p>Tranquila e carinhosa, prefere passeios curtos, sol de manhã e cama macia. Procura uma casa calma para a melhor fase da vida.</p>
+          <a href="contato.html" aria-label="Adotar a Nina">Adote</a>
+        </article>
+
+        <article class="card" data-tipo="gato filhote">
+          <!-- TODO (imagem): foto do Bento, com alt="Foto do Bento" -->
+          <h3>Bento</h3>
+          <p>Gato · Filhote · 4 meses · porte pequeno · macho</p>
+          <p>O mais curioso da turma: explora cada cantinho e já aprendeu a abrir a porta do armário. Precisa de uma família com paciência e brincadeira.</p>
+          <a href="contato.html" aria-label="Adotar o Bento">Adote</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <h3>Quintal Solidário</h3>
+    <p>Rua da Esperança, nº 104 - Jardim dos Ipês - São Paulo/SP - CEP 12345-678</p>
+    <p>Telefone: (11) 2015-5871</p>
+    <p><strong>Projeto acadêmico.</strong> ONG fictícia, criada para a disciplina de Front-end. Nomes, animais e números são fictícios.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
