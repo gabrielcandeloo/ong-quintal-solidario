@@ -1,5 +1,8 @@
 // Aqui ficará nosso JavaScript
-// Referente às caixinhas dos animais
+
+// -------------------------------------------------------
+// Caixinhas dos animais (abrir/fechar informações)
+// -------------------------------------------------------
 const botoes = document.querySelectorAll(".nome-animal");
 
 botoes.forEach(function (botao) {
@@ -24,52 +27,33 @@ botoes.forEach(function (botao) {
 
 
 // -------------------------------------------------------
-// Formulário
-// Funcionalidade obrigatória: validação e confirmação simulada do formulário.
-// -------------------------------------------------------
-const formulario = document.getElementById("formulario");
-const resultado = document.getElementById("resultado-form");
-
-
-// -------------------------------------------------------
 // Máscara automática para o campo de telefone
-// Objetivo: formatar o valor enquanto o usuário digita.
 // Exemplo: 11912345678 -> (11) 91234-5678
 // -------------------------------------------------------
 const phoneInput = document.getElementById("phone");
 
 if (phoneInput) {
   phoneInput.addEventListener("input", function () {
-    // 1) Pega o valor atual do campo e remove tudo que não for número
-    //    Exemplo: "(11) 91234-5678" vira "11912345678"
+    // 1) Remove tudo que não for número
     let digits = phoneInput.value.replace(/\D/g, "");
 
-    // 2) Limita para 11 dígitos
-    //    11 dígitos = 2 do DDD + 9 do número
+    // 2) Limita para 11 dígitos (2 do DDD + 9 do número)
     digits = digits.slice(0, 11);
 
-    // 3) Cria uma variável vazia para montar o texto final
+    // 3) Monta o texto formatado
     let formatted = "";
 
-    // 4) Se houver algum número, começa pelo DDD
-    //    Exemplo: "11" vira "(11)"
     if (digits.length > 0) {
       formatted = "(" + digits.slice(0, 2);
 
-      // 5) Se já tiver mais de 2 dígitos, fecha o parêntese e adiciona espaço
       if (digits.length > 2) {
         formatted += ") ";
       }
     }
 
-    // 6) Se houver mais de 2 números, continua montando o restante
     if (digits.length > 2) {
       const restante = digits.slice(2);
 
-      // 7) Se o restante tiver até 5 dígitos, coloca sem hífen
-      //    Exemplo: "91234"
-      // 8) Se tiver mais de 5, coloca hífen
-      //    Exemplo: "91234-5678"
       if (restante.length <= 5) {
         formatted += restante;
       } else {
@@ -77,62 +61,79 @@ if (phoneInput) {
       }
     }
 
-    // 9) Atualiza o campo com o valor já formatado
+    // 4) Atualiza o campo com o valor formatado
     phoneInput.value = formatted;
   });
 }
 
 
 // -------------------------------------------------------
-// Validação do formulário
+// Validação do formulário (envio simulado)
 // -------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("formulario");
+  const resultado = document.getElementById("resultado-form");
 
+  // Se a página não tem formulário, não faz nada (evita erro em outras páginas)
+  if (!form) return;
 
-if (formulario && resultado) {
-  formulario.addEventListener("submit", function (event) {
-    event.preventDefault();
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // impede o recarregamento da página
 
-    // Lê os campos e remove espaços extras.
+    let mensagem = "";
+    let valido = true;
+
+    // 1. Ler os campos
     const nome = document.getElementById("nome").value.trim();
     const sobrenome = document.getElementById("sobrenome").value.trim();
     const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const diasSelecionados = document.querySelectorAll('input[name="semana[]"]:checked');
+    const telefone = document.getElementById("phone").value.trim();
+    const colaborar = document.getElementById("colaborar").value;
 
-    // Mensagens de erro.
-    let erros = [];
+    // checkboxes marcados -> array com os dias
+    const diasMarcados = Array.from(
+      document.querySelectorAll('input[name="semana[]"]:checked')
+    ).map(function (cb) {
+      return cb.value;
+    });
 
-    if (nome.length < 2) {
-      erros.push("O nome deve ter pelo menos 2 caracteres.");
+    // 2. Padrões de validação
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regexTelefone = /^\([0-9]{2}\)\s[0-9]{5}-[0-9]{4}$/;
+
+    // 3. Regras
+    if (nome === "" || sobrenome === "") {
+      mensagem = "❌ Preencha nome e sobrenome.";
+      valido = false;
+    } else if (!regexEmail.test(email)) {
+      mensagem = "❌ Digite um e-mail válido (ex.: voce@exemplo.com).";
+      valido = false;
+    } else if (!regexTelefone.test(telefone)) {
+      mensagem = "❌ Telefone inválido. Use o formato (11) 91234-5678.";
+      valido = false;
+    } else if (colaborar === "Ser voluntário" && diasMarcados.length === 0) {
+      mensagem = "❌ Para ser voluntário, escolha ao menos um dia da semana.";
+      valido = false;
+    } else if (colaborar === "Ser voluntário") {
+      mensagem = `✅ Obrigado, ${nome}! Seu interesse em ser voluntário nos dias: ${diasMarcados.join(", ")} foi registrado.`;
+    } else if (colaborar === "Adotar") {
+      mensagem = `✅ Obrigado, ${nome}! Entraremos em contato sobre a adoção.`;
+    } else if (colaborar === "Apadrinhar") {
+      mensagem = `✅ Obrigado, ${nome}! Entraremos em contato sobre o apadrinhamento.`;
     }
 
-    if (sobrenome.length < 2) {
-      erros.push("O sobrenome deve ter pelo menos 2 caracteres.");
+    // 4. Mostrar o resultado
+    resultado.textContent = mensagem;
+    resultado.style.color = valido ? "green" : "red";
+
+    // 5. Limpar o formulário se deu certo (envio simulado)
+    if (valido) {
+      form.reset();
     }
 
-    const campoEmail = document.getElementById("email");
-    if (email === "" || !campoEmail.checkValidity()) {
-      erros.push("Digite um e-mail válido.");
-    }
-
-    const campoPhone = document.getElementById("phone");
-    if (phone === "" || !campoPhone.checkValidity()) {
-      erros.push("Digite um telefone válido.");
-    }
-
-    if (diasSelecionados.length === 0) {
-      erros.push("Por favor, selecione pelo menos um dia da semana.");
-    }
-
-    // Se houver algum erro, mostra a mensagem
-    if (erros.length > 0) {
-      resultado.textContent = erros.join(" ");
-      resultado.className = "resultado erro";
-    } else {
-      resultado.textContent =
-        "Mensagem validada! Esta é uma confirmação simulada: nenhum e-mail foi enviado e nenhum dado foi armazenado.";
-      resultado.className = "resultado sucesso";
-      formulario.reset();
-    }
-  });
-}
+    // 6. Apagar a mensagem depois de 4 segundos
+    setTimeout(function () {
+      resultado.textContent = "";
+    }, 4000);
+  }); // fecha o addEventListener('submit')
+});   // fecha o DOMContentLoaded
