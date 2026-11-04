@@ -14,6 +14,7 @@ Projeto de desenvolvimento Front-End. Desenvolvimento de um site com HTML5, CSS 
 - Mariana Brito Farias - RGM 
 - John Antoni Rodrigo Quispe - RGM 49450492
 - Leon Correia da Silva - RGM 48036374
+- Gustavo Almeida Lima - RGM 48157899
 
 
 ---
