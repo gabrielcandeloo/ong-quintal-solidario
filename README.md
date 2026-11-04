@@ -10,8 +10,8 @@ Projeto de desenvolvimento Front-End. Desenvolvimento de um site com HTML5, CSS 
 - Davi Ramos de Oliveira - RGM 49576216
 - Gabriel Silva Candelo - RGM  48050938
 - Gabriel Viana de Lima - RGM 48368881
-- Ynaê Ribeiro da Silva - RGM 
-- Mariana Brito Farias - RGM 
+- Ynaê Ribeiro da Silva - RGM 47987111
+- Mariana Brito Farias - RGM 48134767
 - John Antoni Rodrigo Quispe - RGM 49450492
 - Leon Correia da Silva - RGM 48036374
 - Gustavo Almeida Lima - RGM 48157899
