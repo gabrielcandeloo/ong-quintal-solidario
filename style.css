@@ -1,88 +1,275 @@
-/* Reseta as margens e preenchimentos globais para colar nas bordas */
-/* FONT-FAMILY -> definição da fonte dos textos*/
-*{
+
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+* {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     box-sizing: border-box;
-    
 }
-/* Fundo da Página*/
+
 body {
+    background-color: #FAF6EE;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #B9D0FA;
+    min-height: 110px;
+    gap: 15px;
+}
+
+.imagem-LOGO {
+    display: flex;
+    align-items: center;
+}
+
+.img-LOGO {
+    height: 80px;
+    width: auto;
+}
+
+.texto-LOGO h2 {
+    color: #1F2A44;
+}
+
+.texto-LOGO h6 {
+    color: #B8472F;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 35px;
+    margin-left: auto;
+}
+
+.navegacao a {
+    color: #1F2A44;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navegacao a:hover {
+    color: #B8472F;
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   APRESENTAÇÃO PRINCIPAL
+===================================================== */
+
+.introducao {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 100px 5%;
+    background-color: #1F2A44;
+    color: white;
+    text-align: left;
+}
+
+.intro-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto-intro {
+    flex: 1;
+    max-width: 750px;
+}
+
+.introducao h1 {
+    font-size: 72px;
+    text-align: left;
+    margin: 5px 0 20px;
+    line-height: 1.15;
+}
+
+#apresentacao {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+#botaosobre {
+    margin-top: 25px;
+}
+
+#botaosobre a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+#botaosobre a:hover {
+    background-color: white;
+    color: #1F2A44;
+}
+
+.img-introducao {
+    width: 250px;
+    flex-shrink: 0;
+    text-align: right;
+}
+
+.logo-introducao {
+    width: 200px;
+    height: auto;
+}
+
+
+/* =====================================================
+   SEÇÃO: TRÊS JEITOS DE AJUDAR
+===================================================== */
+
+.selecao {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 5%;
     background-color: #FAF6EE;
 }
 
-
-/* ----------------------------TOPO PAGINAS------------------------------   */
-.cabecalho{
-    display: flex;
-    align-items: center;            /* Alinha tudo verticalmente ao centro */
-    padding: 0px 120px;
-    background-color: #4b6499;      /* Fundo bege claro */
+.selecao h1 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin: 0 0 20px;
 }
 
-.img-LOGO{
-    height: 80px;
+.selecao-botoes {
     display: flex;
-    align-items: left;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-/* Cor da tipografia*/
-.texto-LOGO h2{
+.opcao {
+    flex: 1 1 260px;
+    max-width: 340px;
+    min-height: 165px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    text-align: left;
+}
+
+.opcao h3 {
+    font-size: 28px;
+    color: #1F2A44;
+    margin-bottom: 20px;
+}
+
+.opcao p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: black;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+
+.opcao a {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 20px;
+
+    background-color: #8DB36B;
     color: #1F2A44;
 
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
-.texto-LOGO h6{
-    color: #B8472F;
+
+.opcao a:hover {
+    background-color: #7A9D5B;
+    color: white;
 }
 
 
-.navegacao{
-    display: flex;
-    padding: 0 200px;
-    align-items: center;
-    gap: 30px; 
+.opcao a:hover {
+    text-decoration: underline;
 }
-.navegacao a{
-    color: #1F2A44;            /* Cor do texto do link (azul escuro) */
-    text-decoration: none;     /* Remove o sublinhado padrão */
-}
-.navegacao a:hover{
-    color: #B8472F;
-    text-decoration: underline; /* Sublinha apenas ao passar o mouse (opcional) */
-}
-/* -------------------------------------------------------------------   */
 
 
-/* ------------------------------RODAPÉ----------------------------------   */
-.Rodape{
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+.Rodape {
     color: white;
     background-color: #1F2A44;
-    padding: 30px 20px 10px; /* Topo, Direita, Baixo, Esquerda */
+    padding: 30px 20px 10px;
     width: 100%;
 }
-.Rodape-conteudo{
+
+.Rodape-conteudo {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    gap: 40px;  
-
-}
-.Slogan{
-    max-width: 150px;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.footer-img{
-    height: 130px;
+.Slogan {
+    max-width: 250px;
 }
 
-.Slogan h3{
+.footer-img {
+    height: 100px;
+    width: auto;
+}
+
+.Slogan h3 {
     color: #8DB36B;
+    margin: 10px 0;
 }
 
-.Loc h4{
-    color: #8DB36B;
-    padding-top: 30px;
+.Slogan p {
+    line-height: 1.5;
 }
 
 .Loc {
@@ -90,122 +277,41 @@ body {
     font-size: 15px;
 }
 
-.contato h4{
+.Loc h4 {
     color: #8DB36B;
-    padding-top: 30px;
-}
-.contato {
-     max-width: 200px;
-     font-size: 15px;
+    padding-top: 10px;
+    margin-bottom: 15px;
 }
 
-.rodape-copyright{
-    max-width: 1200px;
-    border-top: 1px solid #5B6478; /* Linha fina e discreta */
-    padding-top: 20px;
-    text-align:center;
+.contato {
+    max-width: 200px;
+    font-size: 15px;
 }
+
+.contato h4 {
+    color: #8DB36B;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.rodape-copyright {
+    max-width: 1200px;
+    margin: 25px auto 0;
+    border-top: 1px solid #5B6478;
+    padding-top: 20px;
+    text-align: center;
+}
+
 .rodape-copyright p {
-    color: #5B6478; /* Tom cinza claro discreto */
+    color: #AAB1C0;
     font-size: 13px;
 }
-/* -------------------------------------------------------------------   */
 
 
-/* -------------------------------------------------------------------   */
-.introducao{
-    display: flex;
-    margin: 0;
-    padding: 20px 15px;
-    background-color: #1F2A44;
-    color: white;
-    text-align: left;
-}
+/* =====================================================
+   CARDS DOS ANIMAIS
+===================================================== */
 
-.introducao h1 {
-  text-align: center;
-  margin: 10px 0 20px;
-}
-
-.intro-conteudo {
-    align-items: justify;
-    justify-content: space-between;
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.texto-intro {
-    flex: 1;
-}
-
-.logo-introducao{
-    height: 200px;
-    width: auto;
-
-}
-
-.img-introducao {
-    width: 200px;
-    height: auto;
-    text-align: right;
-}
-
-#botaosobre a {
-    padding: 10px 20px;
-    color: #1F2A44;
-    text-decoration: none;
-}
-  
-/* ---------- Seleção ---------- */
-
-.selecao-botoes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-.selecao {
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 0 15px;
-}
-  
-.selecao h1 {
-    text-align: center;
-    margin: 20px 0;
-}
-  
-  /* as 3 opções lado a lado */
-.selecao-botoes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-  
-.opcao {
-    flex: 1 1 260px;
-    max-width: 340px;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    text-align: center;
-}
-/* -------------------------------------------------------------------   */
-
-
-
-
-
-
-/*css das caixinhas de cada animal*/
-/* Caixa principal */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -213,15 +319,15 @@ body {
     justify-content: center;
     margin-top: 30px;
 }
+
 .card {
     width: 220px;
     background-color: #FFFFFF;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Botão que contém imagem e nome */
 .nome-animal {
     width: 100%;
     border: none;
@@ -231,7 +337,6 @@ body {
     position: relative;
 }
 
-/* Foto do animal */
 .nome-animal img {
     width: 100%;
     height: 250px;
@@ -239,7 +344,6 @@ body {
     display: block;
 }
 
-/* Nome */
 .nome-animal h3 {
     padding: 20px;
     color: #1F2A44;
@@ -247,7 +351,6 @@ body {
     text-align: center;
 }
 
-/* Sinal de abrir e fechar */
 .sinal {
     position: absolute;
     right: 15px;
@@ -256,124 +359,46 @@ body {
     color: #B8472F;
 }
 
-/* Informações */
 .info-animal {
     padding: 15px;
     color: #5B6478;
     line-height: 1.5;
 }
 
-/* Esconde as informações */
 .info-animal[hidden] {
     display: none;
 }
 
-/* Caixa principal */
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-.card {
-    width: 220px;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
 
-/* Botão que contém imagem e nome */
-.nome-animal {
-    width: 100%;
-    border: none;
-    background-color: #8DB36B;
-    cursor: pointer;
-    text-align: left;
-    position: relative;
-}
+/* =====================================================
+   FORMULÁRIOS
+===================================================== */
 
-/* Foto do animal */
-.nome-animal img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-}
-
-/* Nome */
-.nome-animal h3 {
-    padding: 20px;
-    color: #1F2A44;
-    font-size: 22px;
-    text-align: center;
-}
-
-/* Sinal de abrir e fechar */
-.sinal {
-    position: absolute;
-    right: 15px;
-    bottom: 20px;
-    font-size: 22px;
-    color: #B8472F;
-}
-
-/* Informações */
-.info-animal {
-    padding: 15px;
-    color: #5B6478;
-    line-height: 1.5;
-}
-
-/* Esconde as informações */
-.info-animal[hidden] {
-    display: none;
-}
-
-/* imagens que nunca passam da tela */
-img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* tamanhos flexíveis em vez de px fixo */
-  .formulario input,
-  .formulario select,
-  .formulario textarea {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  /* ajustes para telas pequenas (celular) */
-  @media (max-width: 768px) {
-    .cabecalho {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .navegacao {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .Rodape-conteudo {
-      flex-direction: column;
-    }
-}
 .formulario {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     max-width: 500px;
     width: 90%;
-    margin: 30px auto;          /* centraliza na página */
-    padding: 25px 30px;         /* espaço entre a borda e o conteúdo */
-    border: 1px solid #ddd;
-    border-radius: 12px;        /* cantos arredondados */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra */
+    margin: 30px auto;
+    padding: 25px 30px;
+
+    border: 1px solid #DDDDDD;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
     box-sizing: border-box;
-  }
-/* ---------- Seção: 3 iniciativas ---------- */
+}
+
+
+/* =====================================================
+   SEÇÃO DE INICIATIVAS
+===================================================== */
+
 #iniciativas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -381,83 +406,220 @@ img {
     max-width: 1100px;
     margin: 30px auto;
     padding: 0 15px;
-  }
-  
-  /* título e parágrafo ocupam a linha inteira, centralizados */
-  #iniciativas > h2,
-  #iniciativas > p {
+}
+
+#iniciativas > h2,
+#iniciativas > p {
     grid-column: 1 / -1;
     text-align: center;
-  }
-  
-  /* ---------- Seção: animais ---------- */
-  #animais {
+}
+
+
+/* =====================================================
+   SEÇÃO DE ANIMAIS
+===================================================== */
+
+#animais {
     max-width: 1100px;
     margin: 30px auto;
     padding: 0 15px;
     text-align: center;
+}
 
-  }
-  
-  #lista-animais {
+#lista-animais {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 20px;
     text-align: left;
-  }
-  
-  /* ---------- Filtros ---------- */
-  #filtros {
+}
+
+
+/* =====================================================
+   FILTROS
+===================================================== */
+
+#filtros {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     margin: 20px 0;
-  }
-  
-  #filtros button {
+}
+
+#filtros button {
     padding: 8px 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #CCCCCC;
     border-radius: 20px;
-    background: #fff;
+    background: #FFFFFF;
     cursor: pointer;
-  }
-  
-  /* ---------- Card (vale para as duas seções) ---------- */
-  .card {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-  }
-  
-  /* empurra o link para o fim do card, alinhando os botões */
-  .card a {
+}
+
+
+/* =====================================================
+   CARDS GERAIS
+===================================================== */
+
+.card a {
     margin-top: auto;
     align-self: flex-start;
-  }
-  
-  .card img {
+}
+
+.card img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-  }
-  
-  /* ---------- Abertura ---------- */
-  .hero {
+}
+
+
+/* =====================================================
+   ABERTURA DE OUTRAS PÁGINAS
+===================================================== */
+
+.hero {
     text-align: center;
     max-width: 700px;
     margin: 30px auto;
     padding: 0 15px;
-  }
+}
 
-.selecao{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 20px;
+
+/* =====================================================
+   RESPONSIVIDADE - CELULARES E TABLETS
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .cabecalho {
+        padding: 15px 25px;
+        flex-wrap: wrap;
+    }
+
+    .navegacao {
+        gap: 20px;
+    }
+
+    .introducao {
+        padding: 70px 30px;
+    }
+
+    .introducao h1 {
+        font-size: 52px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .navegacao {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px auto;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .navegacao a {
+        font-size: 15px;
+    }
+
+    .intro-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-intro {
+        max-width: 100%;
+    }
+
+    .introducao h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #apresentacao {
+        font-size: 17px;
+    }
+
+    .img-introducao {
+        width: 100%;
+        text-align: center;
+    }
+
+    .selecao-botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .opcao {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .Rodape-conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Slogan,
+    .Loc,
+    .contato {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .introducao {
+        padding: 50px 20px;
+    }
+
+    .introducao h1 {
+        font-size: 34px;
+    }
+
+    .selecao h1 {
+        font-size: 24px;
+    }
+
+    .opcao h3 {
+        font-size: 25px;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+}
+
+/* Ajustando o tamanho e alinhamento do texto de introdução */
+.introducao {
+    text-align: left; /* Garante que tudo fica alinhado à esquerda */
+    padding: 60px 40px; /* Reduz o espaço das bordas para puxar mais para a esquerda */
+}
+
+.introducao h1 {
+    font-size: 52px; /* Reduz o tamanho do título principal (antes estava 72px) */
     text-align: left;
+    line-height: 1.2;
+}
+
+.texto-intro p, .introducao p {
+    font-size: 14px; /* Deixa o parágrafo menor e mais leve */
+    text-align: left;
+    max-width: 400px; /* Limita a largura para o texto não ficar esticado demais */
+}
+
+#apresentacao {
+    font-size: 19px;     /* <--- Altere este número para deixar maior (ex: 20px, 22px) */
+    line-height: 1.6;    /* Melhora o espaçamento entre as linhas */
+    margin-bottom: 20px; /* Dá um espacinho até o botão debaixo */
 }
