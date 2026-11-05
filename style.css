@@ -344,14 +344,17 @@ img {
     margin-top: 30px;
 }
 
+/* Ajusta os cards para manter a mesma identidade visual da página */
 .cards {
     width: 220px;
     background-color: #FFFFFF;
+    border: 1px solid #E7E1D7;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
+/* Botão do animal com cor da ONG e layout simples */
 .nome-animal {
     width: 100%;
     border: none;
@@ -359,6 +362,9 @@ img {
     cursor: pointer;
     text-align: left;
     position: relative;
+    display: block;
+    padding: 0;
+    color: #1F2A44;
 }
 
 .nome-animal img {
@@ -369,24 +375,30 @@ img {
 }
 
 .nome-animal h3 {
-    padding: 20px;
+    padding: 18px 20px 20px;
+    margin: 0;
     color: #1F2A44;
     font-size: 22px;
     text-align: center;
 }
 
+/* Ícone de abrir/fechar no canto inferior do botão */
 .sinal {
     position: absolute;
     right: 15px;
-    bottom: 20px;
-    font-size: 22px;
+    bottom: 18px;
+    font-size: 24px;
+    font-weight: bold;
     color: #B8472F;
+    line-height: 1;
 }
 
+/* Estilo da área escondida do texto do animal */
 .info-animal {
     padding: 15px;
     color: #5B6478;
     line-height: 1.5;
+    background-color: #F8F3EE;
 }
 
 .info-animal[hidden] {
@@ -611,12 +623,56 @@ img {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Mantém os rótulos do formulário alinhados e legíveis */
+.formulario label {
+    display: block;
+    color: #1F2A44;
+    font-weight: 600;
+    margin: 14px 0 8px;
+}
+
+/* Estilo visual dos campos sem mudar a estrutura do formulário */
 .formulario input,
 .formulario select,
 .formulario textarea {
     width: 100%;
     box-sizing: border-box;
+    border: 1px solid #D9DDE5;
+    border-radius: 8px;
+    padding: 10px 12px;
+    background-color: #FAF6EE;
+    color: #1F2A44;
+    font-size: 1rem;
 }
+
+/* Faz os campos focados combinar com a paleta da página */
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: 2px solid rgba(184, 71, 47, 0.25);
+    border-color: #B8472F;
+}
+
+/* Alinha os dias da semana sem quebrar o layout atual */
+#diasemana {
+    margin-top: 12px;
+    padding: 12px 14px;
+    background-color: #F6F7F9;
+    border: 1px solid #E4E8EE;
+    border-radius: 10px;
+    line-height: 1.8;
+    color: #1F2A44;
+}
+
+#diasemana input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    accent-color: #8DB36B;
+}
+
+/* Mantém o título centralizado como já está na página */
 h3{
     text-align:center;
     }
@@ -625,6 +681,7 @@ h3{
     text-align:center;
 }
 
+/* Botão com a mesma identidade visual da paleta usada na ONG */
 .botao-envio {
     background: #2e7d32;
     color: white;
@@ -635,11 +692,18 @@ h3{
     font-weight: bold;
     cursor: pointer;
     align-items: center;
+    margin-top: 18px;
 }
 
+/* Alinhando o "Inscrição" do topo */
+#titulo {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
 
-
-
+.explicacao {
+    margin-bottom: 18px;
+}
 
 
 

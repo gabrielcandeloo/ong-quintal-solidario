@@ -77,6 +77,7 @@
     
 <div class="cards">
 
+    <!-- Botão do animal: abre e fecha a informação do card -->
     <button class="nome-animal"
             aria-expanded="false"
             aria-controls="info-mel">
@@ -84,11 +85,11 @@
         <img src="docs/dog-mel.jpg" alt="Mel, uma cachorra">
 
         <h3>Mel</h3>
-
-        
+        <span class="sinal">+</span>
 
     </button>
 
+    <!-- Conteúdo oculto até o clique do botão -->
     <div id="info-mel" class="info-animal" hidden>
 
         <p>Cachorro · Vacinada · 3 anos · Porte médio · Fêmea</p>
@@ -106,6 +107,7 @@
  
       <div class="cards">
 
+        <!-- Botão do animal: controla a abertura da descrição -->
         <button class="nome-animal" aling="center"
           aria-expanded="false"
           aria-controls="info-bob">
@@ -113,10 +115,10 @@
             <img src="docs/cat-bob.jpg" alt="Bob, um gatinho">
 
           <h3>Bob</h3>
-
-
+          <span class="sinal">+</span>
 
         </button>
+        <!-- Área de texto que aparece ao clicar -->
         <div id="info-bob" class="info-animal" hidden>
           <p>Gato · Vacinado · 2 anos · porte médio · macho</p>
           <p>O Bob foi resgatado em uma rua do centro e veio para o abrigo com muita energia. Adora brincar e fazer carinho.</p>
@@ -125,6 +127,7 @@
  
       <div class="cards">
 
+        <!-- Botão para expandir a história da Nina -->
         <button class="nome-animal"
           aria-expanded="false"
           aria-controls="info-nina">
@@ -132,8 +135,10 @@
             <img src="docs/dog-nina.jpg" alt="Nina, uma cachorra">
 
         <h3>Nina</h3>
+        <span class="sinal">+</span>
 
         </button>
+        <!-- Conteúdo oculto da cachorra Nina -->
         <div id="info-nina" class="info-animal" hidden>
         <p>Cachorro · Idosa · 8 anos · porte médio · fêmea</p>
         <p>A Nina passou anos numa corrente antes de chegar até nós. Hoje gosta de passeios curtos, sol de manhã e cama macia.</p>
@@ -141,13 +146,16 @@
     </div>
 
       <div class="cards">
+        <!-- Botão do gato Bento com ação de abrir/fechar -->
         <button class="nome-animal"
           aria-expanded="false"
           aria-controls="info-bento">
 
           <img src="docs/cat-bento.jpeg" alt="Bento, um gato">
           <h3>Bento</h3>
+          <span class="sinal">+</span>
         </button>
+        <!-- Informação do Bento aparece ao clicar no botão -->
         <div id="info-bento" class="info-animal" hidden>
           <p>Gato · Filhote · 4 meses · porte pequeno · macho</p>
           <p>O Bento foi encontrado numa caixa de papelão, com os irmãos. É o mais curioso da turma e já aprendeu a abrir a porta do armário.</p>

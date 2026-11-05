@@ -3,25 +3,28 @@
 // -------------------------------------------------------
 // Caixinhas dos animais (abrir/fechar informações)
 // -------------------------------------------------------
+// Seleciona os botões dos animais para abrir/fechar a informação
 const botoes = document.querySelectorAll(".nome-animal");
 
 botoes.forEach(function (botao) {
   botao.addEventListener("click", function () {
-    // Localiza as informações da caixinha
+    // Localiza o bloco de informação relacionado ao botão
     const id = botao.getAttribute("aria-controls");
     const informacoes = document.getElementById(id);
-
-    // Verifica se está fechado
+    // Verifica se o conteúdo está escondido
     const fechado = informacoes.hidden;
 
-    // Abre ou fecha as informações
+    // Abre ou fecha a área de informações
     informacoes.hidden = !fechado;
 
-    // Atualiza o sinal de + e -
-    botao.querySelector(".sinal").textContent = fechado ? "−" : "+";
+    // Atualiza o sinal de + e - quando houver elemento do sinal
+    const sinal = botao.querySelector(".sinal");
+    if (sinal) {
+      sinal.textContent = fechado ? "−" : "+";
+    }
 
-    // Atualiza o estado do botão
-    botao.setAttribute("aria-expanded", fechado);
+    // Atualiza o estado do botão para acessibilidade
+    botao.setAttribute("aria-expanded", String(!fechado));
   });
 });
 
@@ -70,6 +73,7 @@ if (phoneInput) {
 // -------------------------------------------------------
 // Validação do formulário (envio simulado)
 // -------------------------------------------------------
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("formulario");
   const resultado = document.getElementById("resultado-form");
@@ -102,8 +106,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const regexTelefone = /^\([0-9]{2}\)\s[0-9]{5}-[0-9]{4}$/;
 
     // 3. Regras
-    if (nome === "" || sobrenome === "") {
-      mensagem = "❌ Preencha nome e sobrenome.";
+    if (nome.length < 2 || sobrenome.length < 2) {
+      mensagem = "❌ Nome e sobrenome devem ter pelo menos 2 caracteres.";
       valido = false;
     } else if (!regexEmail.test(email)) {
       mensagem = "❌ Digite um e-mail válido (ex.: voce@exemplo.com).";
@@ -131,9 +135,9 @@ document.addEventListener("DOMContentLoaded", function () {
       form.reset();
     }
 
-    // 6. Apagar a mensagem depois de 4 segundos
+    // 6. Apagar a mensagem depois de 10 segundos
     setTimeout(function () {
       resultado.textContent = "";
-    }, 4000);
+    }, 10000);
   }); // fecha o addEventListener('submit')
 });   // fecha o DOMContentLoaded
