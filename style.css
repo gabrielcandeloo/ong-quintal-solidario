@@ -485,7 +485,24 @@ h3{
     height: auto;
     border-radius: 8px;
 }
+.projetos {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
 
+.projetos article {
+  flex: 1;
+  background: #4ba9c6;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.projetos article p {
+  text-align: justify;
+  line-height: 1.6;
+  hyphens: auto;
+}
 
 /* =====================================================
    ABERTURA DE OUTRAS PÁGINAS
@@ -496,6 +513,26 @@ h3{
     max-width: 700px;
     margin: 30px auto;
     padding: 0 15px;
+}
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #324582, #206032);
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto 15px;
+  line-height: 1.7;
+  font-size: 1.1rem;
 }
 
 
