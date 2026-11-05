@@ -18,10 +18,10 @@
 
 
     <nav class="navegacao">
-        <a href="index.html"> Inicio </a>
-        <a href="sobre.html"> Sobre </a>
-        <a href="projetos.html">Projetos</a>
-        <a href="contato.html">Seja Voluntário</a>
+        <a href="index.html"> INICIO </a>
+        <a href="sobre.html"> SOBRE </a>
+        <a href="projetos.html">PROJETOS</a>
+        <a href="contato.html">SEJA VOLUNTARIO</a>
     </nav>
 </header>
 <body>
@@ -30,92 +30,65 @@
 
   <main>
 
-    <!-- 1) ABERTURA -->
-    <section class="hero">
-      <h1>Nossos projetos</h1>
-      <p>Cada animal tem nome, jeito e história. Conheça quem está esperando uma família e veja como você pode ajudar o quintal.</p>
-      <!-- TODO (imagem): logo ou foto do abrigo, com alt descritivo -->
-    </section>
+ 
 
-    <!-- 2) AS 3 INICIATIVAS (o PDF exige no mínimo 3, com nome, descrição, imagem e como a comunidade ajuda) -->
-    <section id="iniciativas">
-      <h2>Três jeitos de ajudar o quintal</h2>
-      <p>Escolha o que combina com a sua rotina.</p>
 
-      <article class="card">
-        <!-- TODO (imagem ou ícone): adoção, com alt -->
-        <h3>Castração</h3>
-        <p>A castração é um gesto de amor e responsabilidade. Além de contribuir para a saúde e o bem-estar dos animais, ajuda a prevenir doenças e reduz o número de animais abandonados nas ruas.</p>
-        <p><strong>Como a comunidade pode ajudar:</strong> incentivando a posse responsável, divulgando campanhas de castração e conscientizando amigos e familiares sobre a importância desse cuidado.</p> 
-        <a href="contato.html">Quero adotar</a>
-      </article>
-
-      <article class="card">
-        <!-- TODO (imagem ou ícone): apadrinhamento, com alt -->
-        <h3>Vacinação</h3>
-        <p>A vacinação é essencial para garantir a saúde e a proteção dos animais contra diversas doenças. Com as vacinas em dia, cães e gatos têm mais qualidade de vida e podem conviver com segurança com outros animais e pessoas.</p>
-        <p><strong>Como a comunidade pode ajudar:</strong> mantendo a carteirinha de vacinação dos pets atualizada, participando das campanhas de imunização e conscientizando outras pessoas sobre a importância da prevenção.</p>
-        <a href="contato.html">Escolher um afilhado</a>
-      </article>
-
-      <article class="card">
-        <!-- TODO (imagem ou ícone): voluntariado, com alt -->
-        <h3>Feira de Doação</h3>
-        <p>Nossa Feira de Doação conecta animais resgatados a famílias que desejam oferecer um lar cheio de amor e cuidado. Cada adoção representa uma nova chance para um animal recomeçar e viver com dignidade.</p>
-        <p><strong>Como a comunidade pode ajudar:</strong> adotando com responsabilidade, divulgando a feira para amigos e familiares e apoiando a causa para que mais animais encontrem um lar definitivo.</p>
-        <a href="contato.html">Quero ajudar</a>
-      </article>
-    </section>
 
     <!-- 3) NOSSOS ANIMAIS -->
     <section id="animais">
-      <h2>Conheça quem está no quintal</h2>
-      <p>Cada bicho chega de um jeito. Veja quem espera por uma família.</p>
-
+      <div class="animaistext">
+         <h2>Conheça quem está no quintal</h2>
+          <p>Cada bicho chega de um jeito. Veja quem espera por uma família.</p>
+      </div>
       <!-- Filtros: os botões abaixo só funcionam se o grupo do JavaScript fizer o filtro.
            Os atributos data-filtro e data-tipo já estão prontos para isso.
            Se o grupo não for usar, apague este bloco inteiro. -->
-      <div id="filtros">
-        <button type="button" data-filtro="todos">Todos</button>
-        <button type="button" data-filtro="cachorro">Cachorros</button>
-        <button type="button" data-filtro="gato">Gatos</button>
-        <button type="button" data-filtro="filhote">Filhotes</button>
-        <button type="button" data-filtro="idoso">Idosos</button>
-      </div>
 
       <div id="lista-animais">
 
-        <article class="card" data-tipo="cachorro">
+        <div class="card" data-tipo="cachorro">
           <!-- TODO (imagem): foto da Mel, com alt="Foto da Mel" -->
           <h3>Mel</h3>
-          <p>Cachorro · Vacinada · 3 anos · porte médio · fêmea</p>
+          <p>Vacinada · 3 anos · Porte médio · Fêmea</p>
+          <div class="Dog">
+            <p>Cachorro</p>
+          </div>
           <p>Foi resgatada debaixo de uma marquise e hoje divide o sofá do abrigo com três gatos. Adora colo e anda bem com outros cães.</p>
           <a href="contato.html" aria-label="Adotar a Mel">Adote</a>
-        </article>
+        </div>
 
-        <article class="card" data-tipo="gato">
+        <div class="card" data-tipo="gato">
           <!-- TODO (imagem): foto do Tico, com alt="Foto do Tico" -->
-          <h3>bob</h3>
-          <p>Gato · Castrado · 1 ano · porte pequeno · macho</p>
+          <h3>Bob</h3>
+          <p>Castrado · 1 ano · Porte pequeno · Macho</p>
+          <div class="Cat">
+            <p>Gato</p>
+          </div>
           <p>Chegou assustado e magrinho, e em poucas semanas virou o primeiro a receber as visitas na porta. Gosta de brincar e de janela.</p>
           <a href="contato.html" aria-label="Adotar o Tico">Adote</a>
-        </article>
+        </div>
 
-        <article class="card" data-tipo="cachorro idoso">
+        <div class="card" data-tipo="cachorro idoso">
           <!-- TODO (imagem): foto da Nina, com alt="Foto da Nina" -->
           <h3>Nina</h3>
-          <p>Cachorro · Idosa · 8 anos · porte médio · fêmea</p>
+          <p>Idosa · 8 anos · Porte médio · Fêmea</p>
+          <div class="Dog">
+            <p>Cachorro</p>
+          </div>
           <p>Tranquila e carinhosa, prefere passeios curtos, sol de manhã e cama macia. Procura uma casa calma para a melhor fase da vida.</p>
           <a href="contato.html" aria-label="Adotar a Nina">Adote</a>
-        </article>
+        </div>
 
-        <article class="card" data-tipo="gato filhote">
+        <div class="card" data-tipo="gato filhote">
           <!-- TODO (imagem): foto do Bento, com alt="Foto do Bento" -->
           <h3>Bento</h3>
-          <p>Gato · Filhote · 4 meses · porte pequeno · macho</p>
+          <p>Filhote · 4 meses · Porte pequeno · Macho</p>
+            <div class="Cat">
+              <p>Gato</p>
+            </div>
           <p>O mais curioso da turma: explora cada cantinho e já aprendeu a abrir a porta do armário. Precisa de uma família com paciência e brincadeira.</p>
           <a href="contato.html" aria-label="Adotar o Bento">Adote</a>
-        </article>
+        </div>
 
       </div>
     </section>
@@ -126,7 +99,7 @@
     <footer class="Rodape">
     <div class="Rodape-conteudo">
         <div class="Slogan">
-            <img src="Docs/Logo-ONG.png" alt="Logo" class="footer-img">
+            <img src="Docs/Logo2-ONG.png" alt="Logo" class="footer-img">
             <h3>Quintal Solidario</h3>
             <br>
             <p>Por trás de cada resgate existe a generosidade de quem escolheu doar.
