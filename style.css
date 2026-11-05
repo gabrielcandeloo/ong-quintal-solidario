@@ -67,7 +67,7 @@ img {
 .Rodape {
     color: white;
     background-color: #1F2A44;
-    padding: 30px 20px 10px;
+    padding: 30px 200px 30px 100px;
     width: 100%;
 }
 
@@ -321,8 +321,8 @@ img {
 ===================================================== */
 
 .conheca {          
-    margin: 10px 0;
-    padding: 30px 300px;
+    margin: 10px 100px;
+    padding: 30px 400px;
   }
 .conheca h2{
     font-size: 50px;
@@ -394,57 +394,139 @@ img {
 }
 
 
-/* =====================================================
-   FORMULÁRIOS
-===================================================== */
-
-.formulario {
-    background-color: #FFFFFF;
-    max-width: 500px;
-    width: 100%;
-    margin: 30px auto;
-    padding: 25px 30px;
-    border: 1px solid #DDDDDD;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.formulario input,
-.formulario select,
-.formulario textarea {
-    width: 100%;
-    box-sizing: border-box;
-}
-h3{
-    text-align:center;
-    }
-
-.explicacao{
-    text-align:center;
-}
-
-.botao-envio {
-    background: #2e7d32;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 15px 20px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    align-items: center;
-}
-
-
 /*==================================================================== */
 /*                             PROJETOS                                */
 /*==================================================================== */
+
+.projeto {          
+    margin: 0px 100px;
+    padding: 30px 400px;
+  }
+.projeto h2{
+    font-size: 50px;
+    color: #1F2A44;        
+    margin: 10px 0;
+  }
+.projeto h4{
+    color: #1F2A44;
+    font-size: 35px;
+    margin: 10px 0;
+}
+.projeto p{
+    font-size: 20px;
+    color: #5b6478;          
+    margin: 0 auto;
+  }
+
+
+.projetos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    padding: 50px 300px;
+    gap: 90px;
+}
+.mut-conteudo{
+    padding: 30px 100px 100px;
+    text-align: left;
+}
+.mut-conteudo h2{
+    color: #1F2A44;
+    font-size: 45px;
+}
+.mut-conteudo p{
+    font-size: 23px;
+}
+.mut-conteudo h4{
+    color: #5B6478;
+    font-size: 30px;
+}
+
+
+.pad-conteudo{
+    padding: 80px 50px 0px 60px;
+    max-width: 80%;
+    background-color:#8DB36B;
+    border: 2px solid gold;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 10px 10px 12px rgba(10, 2, 2, 0.1);
+}
+
+.pad-conteudo h2 {
+    color: #1F2A44;
+    font-size: 45px;
+}
+.pad-conteudo p{
+    font-size: 20px;
+}
+
+.pad-conteudo h4{
+    color: #5B6478;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+.fundo-atividade{
+    background-color: #DCE6F2;
+    margin: 10px auto;
+    padding: 10px 10px 40px 250px ;
+
+}
+
+.atividade {          
+    margin: 10px 100px;
+    padding: 30px 400px;
+  }
+.atividade h2{
+    font-size: 50px;
+    color: #32394a;        
+    margin: 10px 0;
+  }
+.atividade p{
+    font-size: 20px;
+    color: #5b6478;          
+    margin: 0 auto;
+  }
+
+.oque-fazemos {
+    display: grid;
+    gap: 100px;
+  }
+
+.atv {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 20px -100px;
+    max-width: 1100px;
+    border: 2px solid #efdeba;
+    border-radius: 12px;
+    padding: 20px 50px 50px;
+    box-shadow: 0 4px 12px rgba(122, 127, 128, 0.87);
+    gap: 10px;
+  }
+.atv h3{
+    color: #1F2A44;
+    font-size: 25px;
+    text-align: left;
+}
+.atv p{
+    font-size: 22px;
+    text-align: center;
+}
+
+
 
 
   #animais {
     margin: 20px auto;
     padding: 50px 10px 40px 250px ;
-    background-color: #DCE6F2;
+   
 }
   
 
@@ -513,6 +595,50 @@ h3{
     height: auto;
     border-radius: 8px;
   }
+
+/* =====================================================
+   FORMULÁRIOS
+===================================================== */
+
+.formulario {
+    background-color: #FFFFFF;
+    max-width: 500px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 25px 30px;
+    border: 1px solid #DDDDDD;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+h3{
+    text-align:center;
+    }
+
+.explicacao{
+    text-align:center;
+}
+
+.botao-envio {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+
 
 
 
