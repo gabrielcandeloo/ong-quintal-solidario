@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,190 +7,132 @@
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 
+<!--parte superior que contem botões para direcionar as outras paginas-->
+<header class="cabecalho">
+    <div class="imagem-LOGO">
+        <img src="docs/Logo-ONG.png" alt="Logo-Quintal-Solidario" class="img-LOGO"> 
+    </div>
+     <div class="texto-LOGO">
+        <h2>Quintal Solidário </h2>
+        <h6>ABRIGO ANIMAL</h6>
+    </div>
+
+
+    <nav class="navegacao">
+        <a href="index.html"> INICIO </a>
+        <a href="sobre.html"> SOBRE </a>
+        <a href="projetos.html">PROJETOS</a>
+        <a href="contato.html">SEJA VOLUNTARIO</a>
+    </nav>
+</header>
+
+
+<!--Corpo da pagina-->
 <body>
-
-    <!-- CABEÇALHO -->
-    <header class="cabecalho">
-
-        <div class="imagem-LOGO">
-            <img src="docs/Logo-ONG.png"
-                 alt="Logo Quintal Solidário"
-                 class="img-LOGO">
+    <div class="introducao">
+        <div class="intro">
+            <h1>Faça sua doação para animais indefesos</h1>
+            <br>
+            <p> Bem-vindo ao espaço onde vidas ganham uma segunda chance. Resgatamos animais vulneráveis e oferecemos todo o cuidado que merecem, mas precisamos de parceiros nessa jornada. Seja adotando, voluntariando-se ou doando para o nosso sustento, a sua ajuda é essencial para mantermos as portas abertas e os pratos cheios <br> <br> <a href="sobre.html", class="botaosobre">Sobre Nós</a> </p>
         </div>
-
-        <div class="texto-LOGO">
-            <h2>Quintal Solidário</h2>
-            <h6>ABRIGO ANIMAL</h6>
+        <div>
+            <img src="Docs/Logo2-ONG.png" alt="img-logo" class="img-logo" >
         </div>
+    </div>
+    
 
-        <nav class="navegacao">
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="projetos.html">Projetos</a>
-            <a href="contato.html">Seja Voluntário</a>
-        </nav>
+   <!-- 1) ABERTURA -->
+    <section class="hero">
+      <h1>Como ajudar o Quintal</h1>
+      <p>Aqui você irá encontrar diversas formas de ajudar o Quintal Solidário e apoiar a causa animal.</p>
+      <!-- TODO (imagem): logo ou foto do abrigo, com alt descritivo -->
+    </section>
 
-    </header>
+    <!-- 2) AS 3 INICIATIVAS (o PDF exige no mínimo 3, com nome, descrição, imagem e como a comunidade ajuda) -->
+    <section id="iniciativas">
 
+      <article class="carde">
+        <!-- TODO (imagem ou ícone): adoção, com alt -->
+        <img src="Docs/Adotar.webp" alt="Adotar", class="img-ajudas">
+        <br>
+        <h3>Adotar</h3>
+        <br>
+        <p>Conheça quem está esperando e agende uma visita sem compromisso.</p>
+        <p><strong>Como a comunidade pode ajudar:</strong> abrindo a casa para um novo companheiro e passando a ideia adiante.</p>
+        <br>
+        <a href="contato.html">Quero adotar</a>
+      </article>
 
-    <!-- APRESENTAÇÃO PRINCIPAL -->
-    <section class="introducao">
+      <article class="carde">
+        <!-- TODO (imagem ou ícone): apadrinhamento, com alt -->
+         <img src="Docs/Doar.webp" alt="Doe", class="img-ajudas">
+         <br>
+        <h3>Apadrinhar</h3>
+        <br>
+        <p>Não pode adotar agora? Ajude a pagar a ração e o veterinário de um bichinho.</p>
+        <p><strong>Como a comunidade pode ajudar:</strong> escolhendo um afilhado e acompanhando o cuidado dele de perto.</p>
+        <br>
+        <a href="contato.html">Escolher um afilhado</a>
+      </article>
 
-        <div class="intro-conteudo">
-
-            <div class="texto-intro">
-
-                <h1>
-                    Um quintal com espaço pra todo mundo.
-                </h1>
-
-                <p id="apresentacao">
-                    Resgatamos animais vulneráveis e damos a eles
-                    todo o cuidado que merecem. Você pode ajudar
-                    adotando, sendo voluntário ou doando.
-                </p>
-
-                <p id="botaosobre">
-                    <a href="sobre.html">
-                        Conheça um pouco sobre o nosso projeto
-                    </a>
-                </p>
-
-            </div>
-
-            <div class="img-introducao">
-
-                <img src="docs/Logo-ONG.png"
-                     alt="Logo da introdução"
-                     class="logo-introducao">
-
-            </div>
-
-        </div>
-
+      <article class="carde">
+        <!-- TODO (imagem ou ícone): voluntariado, com alt -->
+         <img src="Docs/Passeio.webp" alt="Passear", class="img-ajudas">
+         <br>
+        <h3>Ser Voluntário</h3>
+        <br>
+        <p>Passeios, mutirões de limpeza, fotos e lar temporário: tem lugar para você.</p>
+        <p><strong>Como a comunidade pode ajudar:</strong> doando algumas horas do seu tempo, do jeito que você puder.</p>
+        <br>
+        <a href="contato.html">Quero ajudar</a>
+      </article>
     </section>
 
 
-    <!-- TRÊS JEITOS DE AJUDAR -->
-    <section class="selecao">
-
-        <h1>Três jeitos de ajudar o quintal</h1>
-
-        <div class="selecao-botoes">
-
-            <div class="opcao">
-
-                <h3>Adotar</h3>
-
-                <p>
-                    Conheça quem está esperando e agende
-                    uma visita sem compromisso.
-                </p>
-
-                <a href="projetos.html">Ver os animais</a>
-
-            </div>
 
 
-            <div class="opcao">
-
-                <h3>Apadrinhar</h3>
-
-                <p>
-                    Não pode adotar agora? Ajude a pagar
-                    a ração e o veterinário de um bichinho.
-                </p>
-
-                <a href="projetos.html">Escolher um afilhado</a>
-
-            </div>
 
 
-            <div class="opcao">
-
-                <h3>Ser voluntário</h3>
-
-                <p>
-                    Passeios, mutirões de limpeza, fotos
-                    e lar temporário: tem lugar para você!
-                </p>
-
-                <a href="contato.html">Quer ajudar</a>
-
-            </div>
-
-        </div>
-
-    </section>
 
 
-    <!-- RODAPÉ -->
+
+    
+ 
+   <!-- //CAMPO INFERIOR DA PAGINA QUE CONTEM O CONTATO E INFORMÇÕES DA ONG-->
     <footer class="Rodape">
-
-        <div class="Rodape-conteudo">
-
-            <div class="Slogan">
-
-                <img src="docs/Logo-ONG.png"
-                     alt="Logo"
-                     class="footer-img">
-
-                <h3>Quintal Solidário</h3>
-
-                <p>
-                    Por trás de cada resgate existe a
-                    generosidade de quem escolheu doar.
-                </p>
-
-            </div>
-
-
-            <div class="Loc">
-
-                <h4 class="section-title">Localização</h4>
-
-                <strong>Logradouro:</strong>
-                <span>Rua da Esperança, nº 104</span><br>
-
-                <strong>Bairro:</strong>
-                <span>Bairro Jardim dos Ipês</span><br>
-
-                <strong>CEP:</strong>
-                <span>12345-678</span><br>
-
-                <strong>Município:</strong>
-                <span>São Paulo</span><br>
-
-                <strong>Estado:</strong>
-                <span>SP</span>
-
-            </div>
-
-
-            <div class="contato">
-
-                <h4>Contato</h4>
-
-                <div class="info-line">
-                    <strong>Telefone:</strong>
-                    <span>(11) 4002-8922</span>
-                </div>
-
-            </div>
-
+    <div class="Rodape-conteudo">
+        <div class="Slogan">
+            <img src="Docs/Logo2-ONG.png" alt="Logo" class="footer-img">
+            <h3>Quintal Solidario</h3>
+            <br>
+            <p>Por trás de cada resgate existe a generosidade de quem escolheu doar.
+            </p>
         </div>
 
+
+        <div class="Loc">
+            <h4 class="section-title">Localização</h4>
+            <br>
+            <strong>Logradouro:</strong> <span>Rua da Esperança, nº 104</span> 
+            <strong>Bairro:</strong> <span>Bairro Jardim dos Ipês</span><br>
+            <strong>CEP:</strong> <span>12345-678</span><br>
+            <strong>Município:</strong> <span>São Paulo</span><br>
+            <strong>Estado:</strong><span> SP</span><br>
+        </div>
+    
+        <div class="contato">
+            <h4>Contato</h4>
+            <br>
+            <div class="info-line"><strong>Telefone:</strong> <span>(00) 0000-0000</span></div>
+        </div>
+    </div>
 
         <div class="rodape-copyright">
-
-            <p>
-                © 2026 Quintal Solidário · ONG fictícia
-                criada para um projeto de site.
-            </p>
-
+            <p>© 2026 Quintal Solidário · ONG fictícia criada para um projeto de site.</p>
         </div>
-
+    
     </footer>
-
+ 
+ 
 </body>
 </html>
