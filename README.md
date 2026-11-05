@@ -6,15 +6,15 @@ Projeto de desenvolvimento Front-End. Desenvolvimento de um site com HTML5, CSS 
 
 ## 👤 Integrantes
 
-- Pablo Lorran - RGM 48146978
 - Davi Ramos de Oliveira - RGM 49576216
-- Gabriel Silva Candelo - RGM  48050938
+- Gabriel Silva Candelo - RGM 48050938
 - Gabriel Viana de Lima - RGM 48368881
-- Ynaê Ribeiro da Silva - RGM 47987111
-- Mariana Brito Farias - RGM 48134767
+- Gustavo Almeida Lima - RGM 48157899
 - John Antoni Rodrigo Quispe - RGM 49450492
 - Leon Correia da Silva - RGM 48036374
-- Gustavo Almeida Lima - RGM 48157899
+- Mariana Brito Farias - RGM 48134767
+- Pablo Lorran - RGM 48146978
+- Ynaê Ribeiro da Silva - RGM 47987111
 
 
 ---
